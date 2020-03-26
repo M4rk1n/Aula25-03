@@ -1,0 +1,19 @@
+valor = int(input("Valor do produto: "))
+
+pagam = str(input("Digite 'c' para Cartão ou  'd' para Dinheiro "))
+
+if pagam == "d":
+  cont3 = 10 * valor/100
+  print("Valor a pagar: ",valor - cont3)  
+elif pagam == "c":
+  div = str(input("Digite 'd' para dividir ou 'v' para á vista "))
+if div == "v":
+  cont1 = 5 * valor /100
+  print("Valor a pagar: ", valor - cont1)
+elif div == "d":
+  numParcela = int(input("Digite a quantidade de parcelas: "))
+elif numParcela == 2:
+  print("Valor a pagar: ", valor)
+elif numParcela >= 3:
+  cont2 = 20 * valor / 100
+  print("Valor a pagar: ", valor + cont2 )
