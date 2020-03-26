@@ -1,0 +1,9 @@
+ano = int(input("Informe seu ano de nascimento: "))
+idade = 2020 - ano
+print(idade)
+if idade < 18:
+  print("Falta-lhe",18 - idade," anos para se alistar no Serviço Militar")
+elif idade == 18:
+  print("Chegou a hora!, aliste-se no Serviço Militar Obrigatorio de sua cidade")  
+elif idade > 18:
+  print("Você já passou ",idade - 18, " anos para se alistar!")
